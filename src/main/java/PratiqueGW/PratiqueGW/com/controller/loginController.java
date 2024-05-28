@@ -8,8 +8,8 @@ public class loginController {
 
 		@RequestMapping("/login")
 	    public String hello () {
-	        System.out.println("들어오나 /?");
-	        return "hello";
+	        System.out.println("ehl되는거 맞아 ???? /?");
+	        return "index";
 	    }
 
 	
