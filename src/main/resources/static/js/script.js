@@ -1,3 +1,4 @@
+
 const forms = document.querySelector(".forms"),
 pwShowHide = document.querySelectorAll(".eye-icon"),
 links = document.querySelectorAll(".link");
@@ -25,3 +26,4 @@ link.addEventListener("click", e => {
  forms.classList.toggle("show-signup");
 })
 })
+

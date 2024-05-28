@@ -33,7 +33,7 @@
                         </div>
 
                         <div class="field button-field">
-                            <button>Login</button>
+                            <button onclick="loginAjax();" >Lodgin</button>
                         </div>
                     </form>
 
@@ -109,6 +109,16 @@
         </section>
 
         <!-- JavaScript -->
+        <script>
+            function loginAjax(){
+                console.log("qwidji");
+                $.ajax({
+                    url:"/login/loginCheck",
+                    type:"POST"
+                });
+            }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"/>
         <script src="js/script.js"></script>
     </body>
 </html>
