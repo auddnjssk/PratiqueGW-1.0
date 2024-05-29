@@ -40,7 +40,8 @@ dependencies {
 	runtimeOnly 'com.mysql:mysql-connector-java'
 
 	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.26'
-
+	// #log4j 추가
+	implementation 'org.bgee.log4jdbc-log4j2:log4jdbc-log4j2-jdbc4.1:1.16'
 	
 
 }

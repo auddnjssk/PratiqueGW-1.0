@@ -8,16 +8,13 @@ import PratiqueGW.PratiqueGW.com.vo.loginVo;
 
 @Service
 public class loginService {
-    
-    @Autowired loginMapper mapper;
-	
-    public String loginCheck(loginVo vo){
-        
-        System.out.println("Post 들어옴"+vo.getLoginEmail());
-        
-        mapper.loginCheck(vo);
-        
-        return null;
-    }
 
+    @Autowired private loginMapper mapper;
+
+    public void loginCheck(loginVo vo){
+        System.out.println("서비스 탔음");
+        String count = mapper.loginCheck(vo);
+        System.out.println(count + "< 카운트!");
+    }
+    
 }

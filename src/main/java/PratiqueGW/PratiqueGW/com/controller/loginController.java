@@ -1,10 +1,11 @@
 package PratiqueGW.PratiqueGW.com.controller;
 
-import java.util.Map;
+
+import java.net.http.HttpResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import PratiqueGW.PratiqueGW.com.service.loginService;
 import PratiqueGW.PratiqueGW.com.vo.loginVo;
@@ -13,10 +14,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
 
-@Controller
+@RestController
 public class loginController {
 
-	@Autowired loginService service; 
+	@Autowired private loginService service; 
 
 	@RequestMapping("/")
 	public String hello () {
@@ -28,9 +29,10 @@ public class loginController {
 	public String postMethodName(@RequestBody loginVo vo) {
 		System.out.println("Post 들어옴"+vo.getLoginEmail());
 
+		//HttpResponse response = 
 		service.loginCheck(vo);
 		
-		return "entity";
+		return "index";
 	}
 
 
