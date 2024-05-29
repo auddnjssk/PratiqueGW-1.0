@@ -20,11 +20,11 @@
                     <header>Login</header>
                     <form action="#">
                         <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
+                            <input id = "loginEmail" type="email" placeholder="Email" class="input">
                         </div>
 
                         <div class="field input-field">
-                            <input type="password" placeholder="Password" class="password">
+                            <input id = "loginPw" type="password" placeholder="Password" class="password">
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
 
@@ -111,10 +111,15 @@
         <!-- JavaScript -->
         <script>
             function loginAjax(){
-                console.log("qwidji");
                 $.ajax({
                     url:"/login/loginCheck",
-                    type:"POST"
+                    contentType : 'application/json; charset=utf-8',
+                    type:"POST",
+                    data:JSON.stringify({
+                        loginEmail : $('#loginEmail').val(),
+                        loginPw : $('#loginPw').val()
+                        
+                    })
                 });
             }
         </script>
