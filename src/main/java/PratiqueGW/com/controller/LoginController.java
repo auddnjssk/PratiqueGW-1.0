@@ -2,10 +2,11 @@ package PratiqueGW.com.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 
+import PratiqueGW.com.dto.LoginDTO;
 import PratiqueGW.com.service.LoginService;
 
 
@@ -14,7 +15,7 @@ public class LoginController {
 
 	@Autowired private LoginService service; 
 
-	@RequestMapping("/")
+	@GetMapping("/")
 	public String hello () {
 		System.out.println("메인 페이지 진입");
 
