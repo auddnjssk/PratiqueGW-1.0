@@ -3,13 +3,13 @@ package PratiqueGW.com.mapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
-import PratiqueGW.com.vo.loginVo;
+import PratiqueGW.com.dto.LoginDTO;
 
 @Repository
 @Mapper
-public interface loginMapper {
+public interface LoginMapper {
 
-    String loginCheck(loginVo vo);
+    String loginCheck(LoginDTO dto);
 
 
 }
