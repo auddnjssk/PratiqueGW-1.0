@@ -1,10 +1,10 @@
-package PratiqueGW.PratiqueGW.com.service;
+package PratiqueGW.com.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import PratiqueGW.PratiqueGW.com.mapper.loginMapper;
-import PratiqueGW.PratiqueGW.com.vo.loginVo;
+import PratiqueGW.com.mapper.loginMapper;
+import PratiqueGW.com.vo.loginVo;
 
 @Service
 public class loginService {

@@ -1,4 +1,4 @@
-package PratiqueGW.PratiqueGW.com.vo;
+package PratiqueGW.com.vo;
 
 import lombok.Data;
 
