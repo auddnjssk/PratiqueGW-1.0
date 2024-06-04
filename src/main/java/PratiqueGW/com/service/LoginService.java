@@ -17,7 +17,7 @@ public class LoginService {
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
     
     
-    // 생성자 방식으로 초기
+    // 생성자 방식으로 초기화
     public LoginService(EpyRepository epyRepository,BCryptPasswordEncoder bCryptPasswordEncoder) {
     	
     	this.epyRepository = epyRepository;
